@@ -9,6 +9,9 @@
 		<title>Dimension by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="/favicon.png" type="image/x-icon">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="manifest" href="/site.webmanifest">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -44,12 +47,19 @@
 						<!-- My Servers -->
 							<article id="servers">
 								<h2 class="major">My Servers</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 								<p>I have a bunch of servers running on random hardware accessible to me and my friends and family. I'll go through some of them here.</p>
 								<h3><a href="#kavita">Kavita</a></h3>
 								<p>Kavita is an ebook hosting server that acts like the kindle website for you personal ebooks and comics. </p>
 								<h3><a href="#navidrome">Navidrome</a></h3>
-								<p>Navidrome is a music server that serves your own music files. Once it's set up, you put your music files in the directory and you can access them through the web or with whatever client you like.</p>
+								<p>Navidrome serves your own music files. Once it's set up, you put your music files in the directory and you can access them through the web or with whatever client you like.</p>
+								<h3><a href="#gramps-web">Gramps Web</a></h3>
+								<p>Gramps Web is an ancestry server where you can store your family tree and even dna if you want to. I like it because I don't want my family data in the hands of weirdos like ancestry.com.</p>
+								<h3><a href="#foundry">Foundry VTT</a></h3>
+								<p>Foundry is a self hostable virtual tabletop used by geeks to play DnD type games online.</p>
+								<h3><a href="#ntfy">NTFY</a></h3>
+								<p>NTFY is a useful server that you can use to send notifications from your server to your devices.</p>
+								<h3><a href="#beaver">Beaver Habbits</a></h3>
+								<p>Beaver Habbit Tracker is a simlipstic web server that helps you track your habbits.</p>
 							</article>
 
 							<!-- Kavita -->
@@ -87,17 +97,44 @@
 									</p>
 								</article>
 
+								<!-- Gramps Web -->
+								<article id="gramps-web">
+									<h2 class="major">Gramps Web</h2>
+									<p><a href="https://www.grampsweb.org/" target="_blank">Gramps Web</a> is a self hostable ancestry archiving server, like ancestry.com but hosted by you so you know where all your data is. I'm using this to build up my family tree because I know I'll probably care about this stuff one day lol.</p>
+									<p>Here's the link to the <a href="https://demo.grampsweb.org/login" target="_blank">demo</a>, the username and password are both "owner." If you're already using another ancestry site to do these things, you should know that it's not as hard as you'd think to transfer your data into Gramps Web. </p>
+									<p>Here's the official <a href="https://raw.githubusercontent.com/gramps-project/gramps-web-docs/main/examples/docker-compose-base/docker-compose.yml" target="_blank">docker-compose.yml</a> file.</p>
+								</article>
+
+								<!-- Foundry -->
+								<article id="foundry">
+									<h2 class="major">Foundry Virtual Tabletop</h2>
+									<p><a href="https://foundryvtt.com/" target="_blank">Foundry</a> is my favorite virtual tabletop, even if I wasn't considering the fact that you can self-host it. The alternative for me was roll20, and the difference between the two is like night and day. Not only are there way more cool features in Foundry, but there's also many open source mods you can use (and or buy) to enhance your gameplay. In my opinion, it is well worth it to buy and host Foundry if you're into that sort of thing lol.</p>
+								</article>
+
+								<!-- NTFY -->
+								<article id="ntfy">
+									<h2 class="major">NTFY</h2>
+									<p><a href="https://ntfy.sh/" target="_blank">NTFY</a> is incredibly useful because it lets you send notifications to your devices. Normally this wouldn't be all that special, but that's not the only cool part. It also lets you send push notifications to Apple devices :D. Along with the fact that it's relatively simple to set up, I really love this project. </p>
+									<p>One problem I had with NTFY is that for an embarrassing amount of time I couldn't find the correct AUR to install it. There are a couple different ones, ntfy, ntfy-git, ntfy-alertmanager, ntfysh, and ntfsh-bin. The correct one turned out to be <a href="https://aur.archlinux.org/packages/ntfysh-bin" target="_blank">ntfysh-bin</a> lol.</p>
+								</article>
+
+								<!-- Beaver -->
+								<article id="beaver">
+									<h2 class="major">Beaver Habbits</h2>
+									<p><a href="https://github.com/daya0576/beaverhabits" target="_blank">Beaver Habbits</a> is a minimalistic habbit tracker. I just thought it was cute, and so I set it up and have been using it ever since.</p>
+								</article>
+
 						<!-- Socials -->
 							<article id="socials">
 								<h2 class="major">Social Media</h2>
 								<p>I'm not a big social media guy, and by that I mean I mostly doomscroll on Bluesky without posting much. I also have a Mastodon account, but I never go on there. If you're thinking Bluesky is too obscure for you so use, I'd like to remind you that we need to get people away from the social media platforms owned by giant corporations, as that's part of what's giving the ruling class control over the average people in this country.</p>
 							</article>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>I'm a freshman at Iowa State University majoring in Cybersecurity Engineering. </p>
+						<!-- About Me -->
+							<article id="about-me">
+								<h2 class="major">About Me</h2>
+								<p>I'm a freshman at Iowa State University majoring in Cybersecurity Engineering. I have an on-campus IT job, it's pretty relaxed. I spend my time reading books, futzing with my servers, and doomscrolling.</p>
+								<p>As of 2025-04-21 I need to update my resume, I'll get back hopefully.</p>
 							</article>
 
 
@@ -348,7 +385,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Tristan Larson. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
