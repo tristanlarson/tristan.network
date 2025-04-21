@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Tristan.network</h1>
+								<p>Check out my servers and my resume :D</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#servers">Servers</a></li>
+								<li><a href="#socials">Socials</a></li>
+								<li><a href="#about-me">About Me</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- My Servers -->
+							<article id="servers">
+								<h2 class="major">My Servers</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p>I have a bunch of servers running on random hardware accessible to me and my friends and family. I'll go through some of them here.</p>
+								<h3><a href="#kavita">Kavita</a></h3>
+								<p>Kavita is an ebook hosting server that acts like the kindle website for you personal ebooks and comics. </p>
+								<h3><a href="#navidrome">Navidrome</a></h3>
+								<p>Navidrome is a music server that serves your own music files. Once it's set up, you put your music files in the directory and you can access them through the web or with whatever client you like.</p>
+							</article>
+
+							<!-- Kavita -->
+								<article id="kavita">
+									<h2 class="major">Kavita</h2>
+									<span class="image main"><img src="images/kavita_main.png" alt="" /></span>
+									<p><a href="https://www.kavitareader.com/" target="_blank">Kavita</a> is a self hostable ebook server that you can set up on a raspberry pi to read books and comics while you should be doing other things (at least that's how I use it).</p>
+									<p>Here's a link to the <a href="https://www.kavitareader.com/#demo" target="_blank">official demo</a>, if you'd like to see about setting up a server of your own, there's a nice <a href="https://wiki.kavitareader.com/getting-started/" target="_blank">wiki</a> and a great <a href="https://discord.com/invite/kavita-821879810934439936" target="_blank">Discord community</a>.</p>
+									<p>If you just want the docker link, <a href="https://hub.docker.com/r/jvmilazz0/kavita" target="_blank">here</a> it is :D</p>
+								</article>
+
+							<!-- Navidrome -->
+								<article id="navidrome">
+									<h2 class="major">Navidrome</h2>
+									<span class="image main"><img src="images/navidrome_main.png" alt="" /></span>
+									<p><a href="https://www.navidrome.org/" target="_blank">Navidrome</a> is a nifty music server that you can use to stream your old iTunes m4a files for sentimentality. Or, if you like collecting your favorite music in hi-fi quality like me, you can use it to server flac files from Qobuz. Either way, there's a certain romance that comes with Navidrome and that's what I like about it.</p>
+									<p>There are many clients for Navidrome, including one really great iOS app called <a href="https://www.reddit.com/r/arpeggiApp/" target="_blank">Arpeggi</a>. It is still in beta, so you'll need to install it via <a href="https://testflight.apple.com/join/LDWqgjAs" target="_blank">testflight</a>.</p>
+									<p>One aspect of Navidrome I struggled with was the way it handles metadata. Having previously used Plex, it was weird that some of the metadata and artwork didn't populate correctly, and at first I just went right back to Plex. I gave it another shot one day, and after editing my music files' metadata with <a href="https://www.mp3tag.de/en/" target="_blank">mp3tag</a>, I was able to clean up the navigation so there weren't a hundred albums under "various artists" lol. Along the way I learned there are a few tricks to how Navidrome handles album and artist artwork differently from Plex, I find it's best to name all the artwork folder.jpg haha. Anyways, here are some <a href="#navidrome-tips">tips</a>.</p>
+									<p>If this sounds like too much work to you I reccommend you just use Plex with the PlexAmp app (which is almost as beautiful as Arpeggi btw). There are a lot of features locked behind the subscription to the Plex Pass, but it's a super smooth experience.</p>
+								</article>
+
+							<!-- Navidrome Tips -->
+								<article id="navidrome-tips">
+									<h2 class="major">Navidrome Tips</h2>
+									<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+									<p>When I was setting up Navidrome, I had two main problems:
+										<br>	1. My metadata was a little out of order, so my artists folder was messed up. 
+										<br>	2. The artwork I had wasn't being read properly like it had been in Plex.
+									</p>
+									<h3>Metadata</h3>
+									<p>To fix the metadata, I used a tool called mp3tag. There are similar tools for linux, but mp3tag is the best one, so use that one lol. To begin with, I made a list of all the artists and albums within them that needed fixing. With mp3tag, while editing the relevant files, use Alt+T to show the extended tags. THIS IS WHAT TRIPPED ME UP FOR SO LONG LMAO. You wouldn't think they would matter, but sometimes they do, and Navidrome gets tripped up on these tags.</p>
+									<h3>Artwork</h3>
+									<p>To fix the artwork, the main problem I noticed was that albums with "disc" subfolders didn't have artwork. With albums like this, I put the artwork in each directory, including both discs and the root directory of the album. This works for me, and I don't feel like finding which specific folder it reads the artwork from. 
+									<br>Other than that, I found that if I had multiple albums in an artist and one of the albums didn't have artwork, it was usually because of the file name. For example, in The Beatles, if you have album.jpgs in each album except for With The Beatles, the artwork for With The Beatles might not show up. My fix for this was to just name all the artwork folder.extension lol.
+									</p>
+								</article>
+
+						<!-- Socials -->
+							<article id="socials">
+								<h2 class="major">Social Media</h2>
+								<p>I'm not a big social media guy, and by that I mean I mostly doomscroll on Bluesky without posting much. I also have a Mastodon account, but I never go on there. If you're thinking Bluesky is too obscure for you so use, I'd like to remind you that we need to get people away from the social media platforms owned by giant corporations, as that's part of what's giving the ruling class control over the average people in this country.</p>
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p>I'm a freshman at Iowa State University majoring in Cybersecurity Engineering. </p>
+							</article>
+
+
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
