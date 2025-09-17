@@ -33,69 +33,75 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#servers">Servers</a></li>
-								<li><a href="#socials">Socials</a></li>
+								<li><a href="#services">Services</a></li>
 								<li><a href="#about-me">About Me</a></li>
+								<li><a href="#production">Production</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
 					</header>
+				
+					
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- My Servers -->
-							<article id="servers">
-								<h2 class="major">My Servers</h2>
-								<p>I have a bunch of servers running on random hardware accessible to me and my friends and family. I'll go through some of them here.</p>
-								<h3><a href="#kavita">Kavita</a></h3>
-								<p>Kavita is an ebook hosting server that acts like the kindle website for you personal ebooks and comics. </p>
-								<h3><a href="#navidrome">Navidrome</a></h3>
-								<p>Navidrome serves your own music files. Once it's set up, you put your music files in the directory and you can access them through the web or with whatever client you like.</p>
-								<h3><a href="#gramps-web">Gramps Web</a></h3>
-								<p>Gramps Web is an ancestry server where you can store your family tree and even dna if you want to. I like it because I don't want my family data in the hands of weirdos like ancestry.com.</p>
-								<h3><a href="#foundry">Foundry VTT</a></h3>
-								<p>Foundry is a self hostable virtual tabletop used by geeks to play DnD type games online.</p>
+						<!-- My Services -->
+							<article id="services">
+								<h2 class="major">My Services</h2>
+								<p>I have a bunch of services accessible to me, my friends and family. I'll go through some (not many tbh) of them here.</p>
+								<h3><a href="#cloudflared">Cloudflared Tunnels</a></h3>
+								<p>Cloudflared tunnels are the bomb. I used to forward ports like a chump, if you could even believe it.</p>
+								<h3><a href="#tailscale">Tailscale</a></h3>
+								<p>Tailscale is your own personal VPN with all the hosts you have connected to it.</p>
 								<h3><a href="#ntfy">NTFY</a></h3>
-								<p>NTFY is a useful server that you can use to send notifications from your server to your devices.</p>
-								<h3><a href="#beaver">Beaver Habbits</a></h3>
-								<p>Beaver Habbit Tracker is a simlipstic web server that helps you track your habbits.</p>
+								<p>NTFY is a useful server that you can use to send notifications from your server to your devices, including iOS devices :D.</p>
+								<h3><a href="#pi-hole">Pi-hole</a></h3>
+								<p>I know everyone knows what Pi-hole is and that uni students set it up a lot as projects, but here it is anyways lol. If you don't know what it is, definitely click on this one.</p>
+								<h3><a href="#gramps-web">Gramps Web</a></h3>
+								<p>I exported my families ancestry data into Gramps Web for privacy reasons, and it ended up being way better than whatever we were using lol.</p>
+								<h3><a href="#mealie">Mealie</a></h3>
+								<p>Mealie is a great platform for everything digital about cooking. Recipes, shopping lists, meal planners, it's got it all.</p>
+								<h3><a href="#foundry">Foundry VTT</a></h3>
+								<p>Foundry is a self-hostable virtual tabletop used by geeks to play DnD type games online.</p>
 							</article>
 
-							<!-- Kavita -->
-								<article id="kavita">
-									<h2 class="major">Kavita</h2>
-									<span class="image main"><img src="images/kavita_main.png" alt="" /></span>
-									<p><a href="https://www.kavitareader.com/" target="_blank">Kavita</a> is a self hostable ebook server that you can set up on a raspberry pi to read books and comics while you should be doing other things (at least that's how I use it).</p>
-									<p>Here's a link to the <a href="https://www.kavitareader.com/#demo" target="_blank">official demo</a>, if you'd like to see about setting up a server of your own, there's a nice <a href="https://wiki.kavitareader.com/getting-started/" target="_blank">wiki</a> and a great <a href="https://discord.com/invite/kavita-821879810934439936" target="_blank">Discord community</a>.</p>
-									<p>If you just want the docker link, <a href="https://hub.docker.com/r/jvmilazz0/kavita" target="_blank">here</a> it is :D</p>
+								<!-- Cloudflared Tunnel -->
+								 <article id="cloudflared">
+									<h2 class="major">Cloudflared Tunnel</h2>
+									<span class="image main"><img src="images/cloudflare.png" alt="" /></span>
+									<p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" target="_blank">Cloudflare tunnels</a> are convenient ways of exposing HTTP services running on your machine to the public internet without forwarding ports. I use them to expose literally everything I have running except for game servers which use UDP and don't use HTTP (two requirements). They use <a href="#playit">Playit</a> tunnels instead.</p>
+									<p>You can run it as a systemd service or in a <a href="https://hub.docker.com/r/cloudflare/cloudflared" target="_blank">docker container</a>. Here's the <a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/" target="_blank">official setup page</a>.</p>
+								 </article>
+
+								 <!-- Tailscale -->
+								 <article id="tailscale">
+									<h2 class="major">Tailscale</h2>
+									<span class="image main"><img src="images/tailscale.png" alt="" /></span>
+									<p>I want to say <a href="https://tailscale.com" target="_blank">Tailscale</a> is a VPN server, but I know it's so much more than that, I just can't properly describe it. Basically, you can add hosts to your own VPN and connect to them from anywhere. It's like Plex for systems management.</p>
+									<p>It's super useful, open source, privately owned (like Steam :D), and based in Canada. It doesn't get much better than that lol.</p>
 								</article>
 
-							<!-- Navidrome -->
-								<article id="navidrome">
-									<h2 class="major">Navidrome</h2>
-									<span class="image main"><img src="images/navidrome_main.png" alt="" /></span>
-									<p><a href="https://www.navidrome.org/" target="_blank">Navidrome</a> is a nifty music server that you can use to stream your old iTunes m4a files for sentimentality. Or, if you like collecting your favorite music in hi-fi quality like me, you can use it to server flac files from Qobuz. Either way, there's a certain romance that comes with Navidrome and that's what I like about it.</p>
-									<p>There are many clients for Navidrome, including one really great iOS app called <a href="https://www.reddit.com/r/arpeggiApp/" target="_blank">Arpeggi</a>. It is still in beta, so you'll need to install it via <a href="https://testflight.apple.com/join/LDWqgjAs" target="_blank">testflight</a>.</p>
-									<p>One aspect of Navidrome I struggled with was the way it handles metadata. Having previously used Plex, it was weird that some of the metadata and artwork didn't populate correctly, and at first I just went right back to Plex. I gave it another shot one day, and after editing my music files' metadata with <a href="https://www.mp3tag.de/en/" target="_blank">mp3tag</a>, I was able to clean up the navigation so there weren't a hundred albums under "various artists" lol. Along the way I learned there are a few tricks to how Navidrome handles album and artist artwork differently from Plex, I find it's best to name all the artwork folder.jpg haha. Anyways, here are some <a href="#navidrome-tips">tips</a>.</p>
-									<p>If this sounds like too much work to you I reccommend you just use Plex with the PlexAmp app (which is almost as beautiful as Arpeggi btw). There are a lot of features locked behind the subscription to the Plex Pass, but it's a super smooth experience.</p>
+								 	<!-- Playit Subtopic -->
+									 <article id="playit">
+										<h2 clas="major">Playit Tunnel</h2>
+										<p>A <a href="https://playit.gg" target="_blank">Playit</a> tunnel is very similar to a Cloudflared Tunnel, only it's used for game data, so it works with UDP and non-HTTP traffic.</p>
+									 </article>
+
+								<!-- NTFY -->
+								<article id="ntfy">
+									<h2 class="major">NTFY</h2>
+									<span class="image main"><img src="images/ntfy.png" alt="" /></span>
+									<p><a href="https://ntfy.sh/" target="_blank">NTFY</a> is incredibly useful because it lets you send notifications to your devices. Normally this wouldn't be all that special, but that's not the only cool part. It also lets you send push notifications to Apple devices :D. Along with the fact that it's relatively simple to set up, I really love this project. </p>
+									<p>One problem I had with NTFY is that for an embarrassing amount of time I couldn't find the correct AUR to install it. There are a couple different ones, ntfy, ntfy-git, ntfy-alertmanager, ntfysh, and ntfsh-bin. The correct one turned out to be <a href="https://aur.archlinux.org/packages/ntfysh-bin" target="_blank">ntfysh-bin</a> lol.</p>
 								</article>
 
-							<!-- Navidrome Tips -->
-								<article id="navidrome-tips">
-									<h2 class="major">Navidrome Tips</h2>
-									<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-									<p>When I was setting up Navidrome, I had two main problems:
-										<br>	1. My metadata was a little out of order, so my artists folder was messed up. 
-										<br>	2. The artwork I had wasn't being read properly like it had been in Plex.
-									</p>
-									<h3>Metadata</h3>
-									<p>To fix the metadata, I used a tool called mp3tag. There are similar tools for linux, but mp3tag is the best one, so use that one lol. To begin with, I made a list of all the artists and albums within them that needed fixing. With mp3tag, while editing the relevant files, use Alt+T to show the extended tags. THIS IS WHAT TRIPPED ME UP FOR SO LONG LMAO. You wouldn't think they would matter, but sometimes they do, and Navidrome gets tripped up on these tags.</p>
-									<h3>Artwork</h3>
-									<p>To fix the artwork, the main problem I noticed was that albums with "disc" subfolders didn't have artwork. With albums like this, I put the artwork in each directory, including both discs and the root directory of the album. This works for me, and I don't feel like finding which specific folder it reads the artwork from. 
-									<br>Other than that, I found that if I had multiple albums in an artist and one of the albums didn't have artwork, it was usually because of the file name. For example, in The Beatles, if you have album.jpgs in each album except for With The Beatles, the artwork for With The Beatles might not show up. My fix for this was to just name all the artwork folder.extension lol.
-									</p>
-								</article>
+								<!-- Pi-hole -->
+								 <article id="pi-hole">
+									<h2 class="major">Pi-hole</h2>
+									<p><a href="https://pi-hole.net" target="_blank">Pi-hole</a> is a DNS caching service and proxy / DNS firewall thing. It get's all the DNS queries from the devices on your network, and allows / blocks / redirects them based on your settings.</p>
+									<p>For example, the default blocklist will block things like your Amazon Firestick sending telemetry to whatever random Amazon domain. It also blocks a lot of ads if you want, specifically the ones that are loaded from known ad domains.</p>
+								 </article>
 
 								<!-- Gramps Web -->
 								<article id="gramps-web">
@@ -105,39 +111,79 @@
 									<p>Here's the official <a href="https://raw.githubusercontent.com/gramps-project/gramps-web-docs/main/examples/docker-compose-base/docker-compose.yml" target="_blank">docker-compose.yml</a> file.</p>
 								</article>
 
+								<!-- Mealie -->
+								 <article id="mealie">
+									<h2 class="major">Mealie</h2>
+									<p><a href="https://mealie.io" target="_blank">Mealie</a> is great for all the normal functions, but the best one imo is the import function that imports recipes from online recipes you find.</p>
+									<p>You should definitely set this up, it takes 2 seconds if you're experienced with docker and it makes my life as the food_maker_roommate 1000% easier lol.</p>
+								</article>
+
 								<!-- Foundry -->
 								<article id="foundry">
 									<h2 class="major">Foundry Virtual Tabletop</h2>
-									<p><a href="https://foundryvtt.com/" target="_blank">Foundry</a> is my favorite virtual tabletop, even if I wasn't considering the fact that you can self-host it. The alternative for me was roll20, and the difference between the two is like night and day. Not only are there way more cool features in Foundry, but there's also many open source mods you can use (and or buy) to enhance your gameplay. In my opinion, it is well worth it to buy and host Foundry if you're into that sort of thing lol.</p>
+									<span class="image main"><img src="images/foundry.jpg" alt="" /></span>
+									<p><a href="https://foundryvtt.com/" target="_blank">Foundry</a> is my favorite virtual tabletop, even if I wasn't considering the fact that you can self-host it. The alternative for me was roll20.net, and the difference between the two is like night and day.</p>
+										<p>Not only are there way more cool features in Foundry, but there's also many open source mods you can use (and or buy) to enhance your gameplay. In my opinion, it is well worth it to buy and host Foundry if you're into that sort of thing lol.</p>
 								</article>
 
-								<!-- NTFY -->
-								<article id="ntfy">
-									<h2 class="major">NTFY</h2>
-									<p><a href="https://ntfy.sh/" target="_blank">NTFY</a> is incredibly useful because it lets you send notifications to your devices. Normally this wouldn't be all that special, but that's not the only cool part. It also lets you send push notifications to Apple devices :D. Along with the fact that it's relatively simple to set up, I really love this project. </p>
-									<p>One problem I had with NTFY is that for an embarrassing amount of time I couldn't find the correct AUR to install it. There are a couple different ones, ntfy, ntfy-git, ntfy-alertmanager, ntfysh, and ntfsh-bin. The correct one turned out to be <a href="https://aur.archlinux.org/packages/ntfysh-bin" target="_blank">ntfysh-bin</a> lol.</p>
-								</article>
+								
 
-								<!-- Beaver -->
-								<article id="beaver">
-									<h2 class="major">Beaver Habbits</h2>
-									<p><a href="https://github.com/daya0576/beaverhabits" target="_blank">Beaver Habbits</a> is a minimalistic habbit tracker. I just thought it was cute, and so I set it up and have been using it ever since.</p>
-								</article>
 
-						<!-- Socials -->
-							<article id="socials">
-								<h2 class="major">Social Media</h2>
-								<p>I'm not a big social media guy, and by that I mean I mostly doomscroll on <a href="https://bsky.app/profile/tristan.network" target="_blank">Bluesky</a> without posting much. I also have a <a href="https://hachyderm.io/@tryst1129" target="_blank">Mastodon</a> account, but I never go on there.</p>
-								<p>You should try to get you and your people on Bluesky, stick it to the man lol.</p>
-							</article>
-
+								
 						<!-- About Me -->
 							<article id="about-me">
 								<h2 class="major">About Me</h2>
-								<p>I'm a freshman at Iowa State University majoring in Cybersecurity Engineering. I have an on-campus IT job, it's pretty relaxed. I spend my time reading books, futzing with my servers, and doomscrolling.</p>
-								<p>As of 2025-04-21 I need to update my resume, I'll get back hopefully.</p>
+								<p>I'm a 2nd year Cybersecurity Engineering Major at Iowa State University.</p>
+								<p>Here's my <a href="https://resume.tristan.network">resume</a>.</p>
 							</article>
 
+						<!-- Production -->
+							<article id="production">
+								<h2 class="major">Production Servers</h2>
+								<h3><a href="#veldor">Veldor</a></h3>
+								<p>Veldor is my current prod server.</p>
+								<h3><a href="#luckie">Luckie</a></h3>
+								<p>Luckie was my first prod server. No picture tho, coming soon.</p>
+								<h3><a href="#steeve">Steeve</a></h3>
+								<p>Steeve was never a production server, but he was so cool you should look at him anyways.</p>
+							</article>
+
+
+							<!-- Veldor -->
+							  <article id="veldor">
+								<h2 class="major">Veldor</h2>
+								<span class="image main"><img src="images/veldor.jpg" alt="Picture of a Dell Precision Tower 3420 SFF sitting sexily on the bottom rack of a tempered glass TV stand." /></span>
+								<p>Veldor is a monster compared to what I was using before. I got it for $40 at ISU Surplus at the end of my Freshman year. 😌</p>
+								<p>It's currently running on the bottom of our TV stand, because that's where the router is. It actually looks pretty cool tbh.</p>
+								<p>Model: Dell Precision Tower SFF<br>
+									CPU: Intel(R) Xeon(R) CPU E3-1240 v5 @ 3.50GHz (8 cores)<br>
+									RAM: 32GB DDR4<br>
+									GPU: None 😱🤯</p>
+							  </article>
+
+							<!-- Luckie -->
+							 <article id="luckie">
+								<h2 class="major">Luckie</h2>
+								<p>I can't find any pictures of Luckie right now, but it was my first ever real "production server" in every sense of the word.</p>
+								<p>Before Luckie, I was just messing around by myself, now I host Gramps, Mealie, Audiobookshelf, and Samba for actual users (family and friends lol).</p>
+								<p>Model: HP EliteDesk 800 G1 SFF<br>
+									CPU: Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz (8 cores)<br>
+									RAM: 12GB DDR3</p>
+							 </article>
+
+							<!-- Steeve -->
+							<article id="steeve">
+								<h2 class="major">Steeve</h2>
+								<span class="image main"><img src="images/steeve.jpg" alt="Picture of an HP DL380 Gen 7 Server" /></span>
+								<p>This is Steeve, the HP DL380 G7 server I got off Facebook Marketplace for $10 in my freshman year of college. I picked it up with my roommate Craig.</p>
+								<p>Steeve had an old Intel Xeon CPU, 32GB DDR3, and a really big server graphics card I never cared about.</p>
+								<p>Steeve was super loud even when idle, functioning well as a space heater after the many midnight fire alarms at Friley (Iowa State dorm).</p>
+								<p>I had to give up Steeve when moving out of Friley, since there was no chance in hell I was going to move him anywhere (he was chonky). He'll be remembered fondly.</p>
+							</article>
+
+							
+
+							 
 
 
 						<!-- Elements -->
