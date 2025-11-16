@@ -49,52 +49,273 @@
 						<!-- My Services -->
 							<article id="services">
 								<h2 class="major">My Services</h2>
-								<p>I have a bunch of services accessible to me, my friends and family. I'll go through some (not many tbh) of them here.</p>
-								<h3><a href="#cloudflared">Cloudflared Tunnels (Resume Bragging)</a></h3>
-								<p>Cloudflared tunnels are the bomb. I used to forward ports like a chump, if you could even believe it.</p>
-								<h3><a href="#tailscale">Tailscale (Resume Bragging)</a></h3>
-								<p>Tailscale is your own personal VPN with all the hosts you have connected to it.</p>
-								<h3><a href="#ntfy">NTFY (Resume Bragging)</a></h3>
-								<p>NTFY is a useful server that you can use to send notifications from your server to your devices, including iOS devices :D.</p>
-								<h3><a href="#pi-hole">Pi-hole</a></h3>
-								<p>I know everyone knows what Pi-hole is and that uni students set it up a lot as projects, but here it is anyways lol. If you don't know what it is, definitely click on this one.</p>
-								<h3><a href="#gramps-web">Gramps Web</a></h3>
-								<p>I exported my families ancestry data into Gramps Web for privacy reasons, and it ended up being way better than whatever we were using lol.</p>
-								<h3><a href="#mealie">Mealie</a></h3>
-								<p>Mealie is a great platform for everything digital about cooking. Recipes, shopping lists, meal planners, it's got it all.</p>
-								<h3><a href="#foundry">Foundry VTT</a></h3>
-								<p>Foundry is a self-hostable virtual tabletop used by geeks to play DnD type games online.</p>
-							</article>
+								<p>I have a bunch of services accessible to me, my friends and family. 
+									I'll go through some of them here.</p>
 
-								<!-- Cloudflared Tunnel -->
-								 <article id="cloudflared">
-									<h2 class="major">Cloudflared Tunnel</h2>
-									<span class="image main"><img src="images/cloudflare.png" alt="" /></span>
-									<p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" target="_blank">Cloudflare tunnels</a> are convenient ways of exposing HTTP services running on your machine to the public internet without forwarding ports. I use them to expose literally everything I have running except for game servers which use UDP and don't use HTTP (two requirements). They use <a href="#playit">Playit</a> tunnels instead.</p>
-									<p>You can run it as a systemd service or in a <a href="https://hub.docker.com/r/cloudflare/cloudflared" target="_blank">docker container</a>. Here's the <a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/" target="_blank">official setup page</a>.</p>
+									<h3>
+										<img src="images/gramps-web.svg" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 20px;">
+										<a href="#gramps-web">Gramps Web</a>
+									</h3>
+									<p>
+										I exported my families ancestry data into Gramps Web for privacy reasons, 
+										and it ended up being way better than whatever we were using lol.
+									</p>
+									
+									<h3>
+										<img src="images/mealie.svg" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 20px;">
+										<a href="#mealie">Mealie</a>
+									</h3>
+									<p>Mealie is a great platform for everything digital about cooking. 
+										Recipes, shopping lists, meal planners, it's got it all.</p>
+								
+									<h3>
+										<img src="images/immich.svg" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 20px;">
+										<a href="#immich-opencloud">Immich and OpenCloud</a><img src="images/opencloud.svg" style="width: 50px; height: 50px; vertical-align: middle; margin-left: 20px;">
+									</h3>
+									<p>Immich is a sort of self-hostable Google Photos. They just released 
+										their first stable version (October 2025), and the move from Google Photos has been smooth sailing.</p>
+									<p>Similarly, OpenCloud is a self-hostable Google Drive, which integrates well with self-hostable projects
+										Collabora and OnlyOffice.
+									</p>
+
+									<h3>
+										<img src="images/memos.png" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 20px;">
+										<a href="#memos">Memos</a>
+									</h3>
+									<p>Memos is a cute and convenient journal / diary server. That's about it lol.</p>
+
+									<h3>
+										<img src="images/freshrss.svg" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 20px;">
+										<a href="#freshrss">FreshRSS</a>
+									</h3>
+									<p>FreshRSS is an RSS client as a server. It keeps your RSS feeds synced across all your devices,
+										and makes them available on the web! I find it's a great replacement for social media.
+										RSS is really cool btw, check it out :).</p>
+
+									<h3>
+										<img src="images/donetick.svg" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 20px;">
+										<a href="#donetick">Donetick</a>
+									</h3>
+									<p>Donetick is a todo-list sort of thing. It stands out for two main aspects: 
+										<br>1. Delicious WebUI and shortcuts
+										<br>2. Ticketing-system like setup.
+									</p>
+
+									<h3>
+										<img src="images/foundry-vtt.png" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 20px;">
+										<a href="#foundry">Foundry VTT</a>
+									</h3>
+									<p>Foundry is a self-hostable virtual tabletop used by geeks to play DnD type games online.
+										Once you get set up, it's a BIG upgrade over Roll20, a competitor with ads and limited features.</p>
+								
+
+											 <!-- TECHNICAL SERVICES-->
+								<h2 class="major">Technical Services</h2>
+								
+									<h3>
+										<img src="images/outline.svg" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 20px;">
+										<a href="#outline">Outline</a>
+									</h3>
+									<p>Outline is a self hostable knowledge base, and before you glance away it's not as boring as it sounds!
+										You can use it for yourself, but you can also give your technologically helpless friends and family access!
+									</p>
+								
+									<h3>
+										<img src="images/pocketid.svg" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 20px;">
+										<a href="#pocketid">PocketID</a>
+									</h3>
+									<p>PocketID is an SSO, like Authentik on Authelia, but it only supports passkey authentication. I really love it because
+										I've seen first-hand just how awful my family members' password storage methods are. Not on my server lmao.
+									</p>
+								
+									<h3>
+										<img src="images/cloudflared.svg" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 20px;">
+										<a href="#cloudflared">Cloudflared</a>
+									</h3>
+									<p>Cloudflared tunnels are creepily useful tools for self-hosting public facing web servers when you can't port forward! 
+										There's also other benefits, but this is the only one that keeps me using them. There's also a huge downside...
+									</p>
+								
+									<h3>
+										<img src="images/tailscale.svg" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 20px;">
+										<a href="#tailscale">Tailscale</a>
+									</h3>
+									<p>Tailscale is to VPNs what Cloudflared tunnels are to web servers. It uses NAT traversal to create what are essentially
+										P2P VPNs, so you don't need to mess with port forwarding!
+									</p>
+								
+									<h3>
+										<img src="images/ntfy.svg" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 20px;">
+										<a href="#ntfy">ntfy</a>
+									</h3>
+									<p>ntfy is handy for sending notifications from your server. It works great and fully supports iOS push notifications!
+									</p>
+
+								
+							
+								</article>
+
+								<!-- Gramps Web -->
+								<article id="gramps-web">
+									<h2 class="major">Gramps Web</h2>
+									<span class="image main"><img src="images/gramps-web-page.jpg" alt="" /></span>
+									<p><a href="https://www.grampsweb.org/" target="_blank">Gramps Web</a> is a self hostable ancestry archiving server. It's like ancestry.com but hosted by you so you 
+																							know where all your data is. I'm using this to build up my family tree because I know I'll probably care about 
+																							this stuff one day lol.</p>
+																							<p>Here's the link to the <a href="https://demo.grampsweb.org/login" target="_blank">demo</a>, the username and 
+																							password are both "owner." If you're already using another ancestry site to do these things, you should know that 
+																							it's not as hard as you'd think to transfer your data into Gramps Web. </p>
+																							<p>Here's the official <a href="https://raw.githubusercontent.com/gramps-project/gramps-web-docs/main/examples/docker-compose-base/docker-compose.yml" target="_blank">docker-compose.yml</a> file.</p>
+																							</article>
+
+								<!-- Mealie -->
+								 <article id="mealie">
+									<h2 class="major">Mealie</h2>
+									<span class="image main"><img src="images/mealie-page.png" alt="" /></span>
+									<p><a href="https://mealie.io" target="_blank">Mealie</a> is great for all the normal functions, but the best one imo is the import function that 
+																					imports recipes from online recipes you find. If you find a random recipe on the internet, you can 
+																					put the url in mealie and it'll import it in a single click :D.</p>
+																				 <p>You should definitely set this up if you're tired of cookbooks or if you're in a shared living 
+																					environment where you buy groceries together but don't have a shared notes app (it has a shopping 
+																					list feature).</p>
+																					</article>
+
+								<!-- Immich and OpenCloud -->
+								 <article id="immich-opencloud">
+									<h2 class="major">Immich</h2>
+									<span class="image main"><img src="images/immich-page.webp" alt="" /></span>
+									<p><a href="https://immich.app" target="_blank">Immich</a> is amazing, and it doesn't even take that much setup! It looks just like Google Photos 
+																					so nobody's out of their depth, and there's even this beautiful tool called 
+																					<a href="https://github.com/mattwilson1024/google-photos-exif" target="_blank">google-photos-exit</a> 
+																					that'll fix the broken photos Google gives you when you prepare to make the switch!</p>
+									<h2 class="major">OpenCloud</h2>
+									<span class="image main"><img src="images/opencloud-page.jpg" alt="" /></span>
+									<p><a href="https://opencloud.eu" target="_blank">OpenCloud</a> pretty cool. I use Samba for my file management, but I like these guys as a pair so 
+																						OpenCloud will stay on my server for vanity's sake.</p>
+																						<p>It is really great though, better than it's competitors 
+																						(NextCloud, OwnCloud, etc.) in my opinion.</p>
+																					</article>
+
+								<!-- Memos -->
+								 <article id="memos">
+									<h2 class="major">Memos</h2>
+									<span class="image main"><img src="images/memos-page.png" alt="" /></span>
+									<p><a href="https://usememos.com" target="_blank">Memos</a> is a cute little journal / diary server. If you're like me, you unfortunately don't have the patience
+																						for the inefficiency of hand-written journaling. That's where Memos comes in. Unfortunately, the only compatible
+																						iOS client doesn't support the latest API, so you need to use a boilerplate server to convert the new API to the old one.
+																						Otherwise, Memos works great!
+																						</p>
+																						<p>
+																							Another great thing about Memos is the filtering and tagging, which can help you keep track of whatever you want.
+																						</p>
+																						</article>
+
+								<!-- FreshRSS -->
+								 <article id="freshrss">
+									<h2 class="major">FreshRSS</h2>
+									<span class="image main"><img src="images/freshrss-page.png" alt="" /></span>
+									<p><a href="https://www.freshrss.org" target="_blank">FreshRSS</a>, as I said, is an RSS client as a server, but it's also so much more! I haven't explored
+																						too deeply, but it can scrape websites that don't support RSS! 
+																						<br><br>
+																						If that's not enough, it takes the load off your phone, which doesn't 
+																						sound like much, but think about it. Once you get >=100 feeds, your phone would be
+																						querying >= 100 rss feeds every 10 minutes or so depending on your settings. 
+																						Whereas when it's your server doing it there's no need to worry, as your phone's 
+																						just querying one website.
+																						<br><br> 
+																						Pro Tip: You can subscribe to substacks by adding "/feed" onto their base url.
+																						</p>
+																						</article>
+
+								<!-- Donetick -->
+								 <article id="donetick">
+									<h2 class="major">Donetick</h2>
+									<span class="image main"><img src="images/donetick-page.png" alt="" /></span>
+									<p><a href="https://donetick.com" target="_blank">Doneticke</a> is a todo-list that stood out to me because of it's UI. When I got it running though,
+																						I noticed the handy shortcuts it has, which made my workflow a little more efficient over Vikunja.</p>
+																						<p>Other than that, it's just a todo-list. Do with that what you will lol.</p>
+																					<p>I'd imagine it'd be really useful for parents now that I think of it. Simple enough UI with enough mobile
+																						support for it to be kid friendly, ah it's literally on their website as an intended use case: chores lol.
+																					</p>
 								 </article>
+
+								<!-- Foundry -->
+								<article id="foundry">
+									<h2 class="major">Foundry Virtual Tabletop</h2>
+									<span class="image main"><img src="images/foundry.jpg" alt="" /></span>
+									<p><a href="https://foundryvtt.com/" target="_blank">Foundry</a> is my favorite virtual tabletop, even if I wasn't considering the fact that you can self-host it. 
+																						The alternative for me was roll20.net, and the difference between the two is like night and day.</p>
+																						<p>Not only are there way more cool features in Foundry, but there's also many open source mods you can use to 
+																						enhance your gameplay. In my opinion, it is well worth it to buy and host Foundry if you're into that sort of thing lol.</p>
+																						</article>
+
+								<!-- TECHNICAL SERVICES -->
+
+								<!-- Outline -->
+								 <article id="outline">
+									<h2 class="major">Outline</h2>
+									<span class="image main"><img src="images/outline-page.png" alt="" /></span>
+									<p><a href="https://outline.app" target="_blank">Outline</a> is perfect for keeping your thoughts together and recording the nitty gritty details of
+																									the processes you repeat frequently enough to warrant it but infrequently enough that 
+																									you're always forgetting them. 
+																									<br><br>
+																									It's also super helpful for when you're helping your friends and family with tech support.
+																									Everyone knows some people are just hopeless with this stuff, but it's good to be able to direct
+																									people to resources you've made when you're too busy. </p>
+																									</article>
+
+								<!-- PocketID -->
+								 <article id="pocketid">
+									<h2 class="major">Outline</h2>
+									<span class="image main"><img src="images/pocketid-page.png" alt="" /></span>
+									<p><a href="https://pocket-id.org" target="_blank">PocketID</a> is a popular new OIDC provider, and I love everything about it except for how new and untested it is 😅. 
+																									<br><br>
+																									It's super easy to use once you get the hang of it, and it makes user management incredibly easy in the ways
+																									I'm sure all SSOs do. They even have an ever-growing <a href="https://pocket-id.org/docs/client-examples" target="_blank">webpage</a> of integration methods for various projects.</p>
+																									</article>
+
+								<!-- Cloudflared -->
+								 <article id="cloudflared">
+									<h2 class="major">Cloudflared</h2>
+									<span class="image main"><img src="images/cloudflared-page.png" alt="" /></span>
+									<p><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" target="_blank">Cloudflared tunnels</a> are convenient ways of exposing HTTP services running on your machine to the public 
+																																				internet without forwarding ports. I use them to expose literally everything I have running except for game 
+																																				servers which don't use HTTP traffic. They use <a href="#playit">Playit</a> tunnels instead, check that out too!</p>
+																																			 <p>You can run it as a systemd service or in a <a href="https://hub.docker.com/r/cloudflare/cloudflared" target="_blank">docker container</a>. 
+																																				Here's the <a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/" target="_blank">official setup page</a>.</p>
+																																			<p>ONE CREEPY NOTE: they terminate TLS as the traffic passes through their servers to do all their protective things. Ew.</p>
+																																				</article>
+
+																<!-- Playit Subtopic -->
+																<article id="playit">
+																	<h2 clas="major">Playit Tunnel</h2>
+																	<p>A <a href="https://playit.gg" target="_blank">Playit</a> tunnel is very similar to a Cloudflared Tunnel, only it's used for game data, 
+																													so it works with UDP and non-HTTP traffic.</p>
+																													</article>
 
 								 <!-- Tailscale -->
 								 <article id="tailscale">
 									<h2 class="major">Tailscale</h2>
-									<span class="image main"><img src="images/tailscale.png" alt="" /></span>
-									<p>I want to say <a href="https://tailscale.com" target="_blank">Tailscale</a> is a VPN server, but I know it's so much more than that, I just can't properly describe it. Basically, you can add hosts to your own VPN and connect to them from anywhere. It's like Plex for systems management.</p>
-									<p>It's super useful, open source, privately owned (like Steam :D), and based in Canada. It doesn't get much better than that lol.</p>
-								</article>
-
-								 	<!-- Playit Subtopic -->
-									 <article id="playit">
-										<h2 clas="major">Playit Tunnel</h2>
-										<p>A <a href="https://playit.gg" target="_blank">Playit</a> tunnel is very similar to a Cloudflared Tunnel, only it's used for game data, so it works with UDP and non-HTTP traffic.</p>
-									 </article>
+									<span class="image main"><img src="images/tailscale-page.svg" alt="" /></span>
+									<p><a href="https://tailscale.com" target="_blank">Tailscale</a>, specifically the server portion (which isn't Open Sourced), is used to initiate P2P VPN 
+																						connections between your hosts.</p>
+																					 <p>There's a great alternative whose server <i>is</i> fully open sourced, it's called <a href="https://netbird.io/" target="_blank">NetBird</a>.
+																						I've been meaning to migrate from Tailscale to NetBird for a while now, but there's always something more interesting to do lol.</p>
+																						</article>
 
 								<!-- NTFY -->
 								<article id="ntfy">
-									<h2 class="major">NTFY</h2>
+									<h2 class="major">ntfy</h2>
 									<span class="image main"><img src="images/ntfy.png" alt="" /></span>
-									<p><a href="https://ntfy.sh/" target="_blank">NTFY</a> is incredibly useful because it lets you send notifications to your devices. Normally this wouldn't be all that special, but that's not the only cool part. It also lets you send push notifications to Apple devices :D. Along with the fact that it's relatively simple to set up, I really love this project. </p>
-									<p>One problem I had with NTFY is that for an embarrassing amount of time I couldn't find the correct AUR to install it. There are a couple different ones, ntfy, ntfy-git, ntfy-alertmanager, ntfysh, and ntfsh-bin. The correct one turned out to be <a href="https://aur.archlinux.org/packages/ntfysh-bin" target="_blank">ntfysh-bin</a> lol.</p>
-								</article>
+									<p><a href="https://ntfy.sh/" target="_blank">ntfy</a> is incredibly useful because it lets you send notifications to your devices. Normally 
+																					this wouldn't be all that special, but that's not the only cool part. It also lets you send push 
+																					notifications to Apple devices :D. Along with the fact that it's relatively simple to set up, I 
+																					really love this project. </p>
+																				 <p>One problem I had with NTFY is that for an embarrassing amount of time I couldn't find the correct 
+																					AUR to install it. There are a couple different ones, ntfy, ntfy-git, ntfy-alertmanager, ntfysh, and ntfsh-bin. 
+																					The correct one turned out to be <a href="https://aur.archlinux.org/packages/ntfysh-bin" target="_blank">ntfysh-bin</a> lol.</p>
+																				 <p>Thankfully, the Docker container is super easy to find and set up, so don't even worry about that.</p>
+																					</article>
 
 								<!-- Pi-hole -->
 								 <article id="pi-hole">
@@ -102,29 +323,6 @@
 									<p><a href="https://pi-hole.net" target="_blank">Pi-hole</a> is a DNS caching service and proxy / DNS firewall thing. It get's all the DNS queries from the devices on your network, and allows / blocks / redirects them based on your settings.</p>
 									<p>For example, the default blocklist will block things like your Amazon Firestick sending telemetry to whatever random Amazon domain. It also blocks a lot of ads if you want, specifically the ones that are loaded from known ad domains.</p>
 								 </article>
-
-								<!-- Gramps Web -->
-								<article id="gramps-web">
-									<h2 class="major">Gramps Web</h2>
-									<p><a href="https://www.grampsweb.org/" target="_blank">Gramps Web</a> is a self hostable ancestry archiving server, like ancestry.com but hosted by you so you know where all your data is. I'm using this to build up my family tree because I know I'll probably care about this stuff one day lol.</p>
-									<p>Here's the link to the <a href="https://demo.grampsweb.org/login" target="_blank">demo</a>, the username and password are both "owner." If you're already using another ancestry site to do these things, you should know that it's not as hard as you'd think to transfer your data into Gramps Web. </p>
-									<p>Here's the official <a href="https://raw.githubusercontent.com/gramps-project/gramps-web-docs/main/examples/docker-compose-base/docker-compose.yml" target="_blank">docker-compose.yml</a> file.</p>
-								</article>
-
-								<!-- Mealie -->
-								 <article id="mealie">
-									<h2 class="major">Mealie</h2>
-									<p><a href="https://mealie.io" target="_blank">Mealie</a> is great for all the normal functions, but the best one imo is the import function that imports recipes from online recipes you find.</p>
-									<p>You should definitely set this up, it takes 2 seconds if you're experienced with docker and it makes my life as the food_maker_roommate 1000% easier lol.</p>
-								</article>
-
-								<!-- Foundry -->
-								<article id="foundry">
-									<h2 class="major">Foundry Virtual Tabletop</h2>
-									<span class="image main"><img src="images/foundry.jpg" alt="" /></span>
-									<p><a href="https://foundryvtt.com/" target="_blank">Foundry</a> is my favorite virtual tabletop, even if I wasn't considering the fact that you can self-host it. The alternative for me was roll20.net, and the difference between the two is like night and day.</p>
-										<p>Not only are there way more cool features in Foundry, but there's also many open source mods you can use to enhance your gameplay. In my opinion, it is well worth it to buy and host Foundry if you're into that sort of thing lol.</p>
-								</article>
 
 								
 
@@ -135,11 +333,15 @@
 								<h2 class="major">About Me</h2>
 								<p>I'm a 2nd year Cybersecurity Engineering Major at Iowa State University.</p>
 								<p>I'm currently working as a Systems Support Technician on campus, and (obviously) I love hosting services for my friends and family!</p>
+								<p>Here's my <a rel="me" href="https://hachyderm.io/@tryst1129">Mastodon</a>!</p>
 							</article>
 
 						<!-- Production -->
 							<article id="production">
 								<h2 class="major">Production Servers</h2>
+								<p>Yes I've named them, sue me!</p>
+								<h3><a href="#technical-overview">Technical Overview</a></h3>
+								<p><b>Potential Employers look here!</b></p>
 								<h3><a href="#veldor">Veldor</a></h3>
 								<p>Veldor is my current production server.</p>
 								<h3><a href="#luckie">Luckie</a></h3>
@@ -147,6 +349,16 @@
 								<h3><a href="#steeve">Steeve</a></h3>
 								<p>Steeve was never a production server, but he was so cool you should look at him anyways.</p>
 							</article>
+
+							<!-- Technical Overview -->
+							<article id="technical-overview">
+								<h2 class="major">Technical Overview</h2>
+								<p> Right now I'm running Proxmox, with separate production and testing VMs.</p>
+								<p> Over the years though I've hosted services on a large variety of hardware and software, including
+										Jailbroken Chromebooks, android phones, old computers, and a rack server.</p>
+								<p> I've used Arch, Fedora, and Debian. I've run services with Tmux, Systemd, Docker containers, and more recently LXCs and VMs.</p>
+							</article>
+									 
 
 
 							<!-- Veldor -->
@@ -164,7 +376,7 @@
 							<!-- Luckie -->
 							 <article id="luckie">
 								<h2 class="major">Luckie</h2>
-								<p>I can't find any pictures of Luckie right now, but it was my first ever real "production server" in every sense of the word.</p>
+								<p>I can't find any pictures of Luckie right now, but it was my first ever real "production server".</p>
 								<p>Before Luckie, I was just messing around by myself, now I host Gramps, Mealie, Audiobookshelf, and Samba for actual users (family and friends lol).</p>
 								<p>Model: HP EliteDesk 800 G1 SFF<br>
 									CPU: Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz (8 cores)<br>
@@ -177,7 +389,7 @@
 								<span class="image main"><img src="images/steeve.jpg" alt="Picture of an HP DL380 Gen 7 Server" /></span>
 								<p>This is Steeve, the HP DL380 G7 server I got off Facebook Marketplace for $10 in my freshman year of college. I picked it up with my roommate Craig.</p>
 								<p>Steeve had an old Intel Xeon CPU, 32GB DDR3, and a really big server graphics card I never cared about.</p>
-								<p>Steeve was super loud even when idle, functioning well as a space heater after the many midnight fire alarms at Friley (Iowa State dorm).</p>
+								<p>Steeve was super loud even when idle, functioning well as a space heater + white noise machine after the many midnight fire alarms at Friley (Iowa State dorm).</p>
 								<p>I had to give up Steeve when moving out of Friley, since there was no chance in hell I was going to move him anywhere (he was chonky). He'll be remembered fondly.</p>
 							</article>
 
