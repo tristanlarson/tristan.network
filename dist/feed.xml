@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Tristan Network</title>
+    <subtitle>I host open source services for fun. Have a look!</subtitle>
+    <link href="https://tristan.network/feed.xml" rel="self"/>
+    <link href="https://tristan.network/"/>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <id>https://tristan.network/</id>
+    <author>
+        <name>Tristan</name>
+    </author>
+    
+    <entry>
+        <title>articles-working</title>
+        <link href="https://tristan.network/blog/articles/test/"/>
+        <updated>2026-03-10T00:00:00Z</updated>
+        <id>https://tristan.network/blog/articles/test/</id>
+        <category term="articles"/>
+        <summary>The articles blog is working.</summary>
+        <content type="html"><p>TESTING ARTICLES</p>
+</content>
+    </entry>
+    
+    <entry>
+        <title>notes-working</title>
+        <link href="https://tristan.network/blog/notes/notes-test/"/>
+        <updated>2026-03-10T00:00:00Z</updated>
+        <id>https://tristan.network/blog/notes/notes-test/</id>
+        <category term="notes"/>
+        <summary>The notes blog is working.</summary>
+        <content type="html"><p>TESTING NOTES</p>
+</content>
+    </entry>
+    
+    <entry>
+        <title>Welcome to the new site</title>
+        <link href="https://tristan.network/blog/server-updates/welcome/"/>
+        <updated>2026-03-10T00:00:00Z</updated>
+        <id>https://tristan.network/blog/server-updates/welcome/</id>
+        <category term="server-updates"/>
+        <summary>The site is up and running on Cloudflare Pages.</summary>
+        <content type="html"><p>Welcome to the new site! This is the first post. -Claude</p>
+</content>
+    </entry>
+    
+</feed>

@@ -1,0 +1,17 @@
+<section id="footer">
+    <div class="inner">
+        <h2 class="major">Get in touch</h2>
+        <ul class="contact">
+            {% if site.email %}
+            <li class="icon solid fa-envelope"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {% endif %}
+            {% if site.social.mastodon %}
+            <li class="icon brands fa-mastodon"><a href="{{ site.social.mastodon }}">{{ site.social.mastodon }}</a></li>
+            {% endif %}
+        </ul>
+        <ul class="copyright">
+            <li>&copy; {{ site.title }}. All rights reserved.</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+</section>

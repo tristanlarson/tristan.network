@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+title: Home
+---
+
+<section id="banner">
+    <div class="inner">
+        <div class="logo"><span class="icon fa-gem"></span></div>
+        <h2>{{ site.title }}</h2>
+        <p>{{ site.description }}</p>
+    </div>
+</section>
+
+<section id="wrapper">
+
+    <section id="one" class="wrapper spotlight style1">
+        <div class="inner">
+            <div class="content">
+                <h2 class="major">About</h2>
+                <p>I'm a sophmore Cybersecurity major at Iowa State University.</p>
+                <a href="/about/" class="special">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="two" class="wrapper alt spotlight style2">
+        <div class="inner">
+            <div class="content">
+                <h2 class="major">Latest Updates</h2>
+                <p>Server news, articles and notes.</p>
+                <a href="/blog/" class="special">Visit the blog</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="three" class="wrapper spotlight style3">
+        <div class="inner">
+            <div class="content">
+                <h2 class="major">Recent Posts</h2>
+                <section class="features">
+                {% for post in collections.posts | reverse | limit(4) %}
+                    <article>
+                        <h3 class="major">{{ post.data.title }}</h3>
+                        <p>{{ post.data.description }}</p>
+                        <a href="{{ post.url }}" class="special">Read more</a>
+                    </article>
+                {% endfor %}
+                </section>
+            </div>
+        </div>
+    </section>
+
+</section>

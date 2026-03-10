@@ -1,0 +1,15 @@
+{
+  "title": "Tristan Network",
+  "description": "I host open source services for fun. Have a look!",
+  "url": "https://tristan.network",
+  "author": "Tristan",
+  "email": "tristan@tristan.network",
+  "nav": [
+    { "text": "Home", "url": "/" },
+    { "text": "Blog", "url": "/blog/" },
+    { "text": "About", "url": "/about/" }
+  ],
+  "social": {
+    "mastodon": "https://hachyderm.io/@tryst1129"
+  }
+}

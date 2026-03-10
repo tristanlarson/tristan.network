@@ -1,0 +1,63 @@
+---
+layout: layouts/base.njk
+title: Blog
+---
+
+<section id="banner">
+    <div class="inner">
+        <h2>Blog</h2>
+        <p>Updates, articles and notes.</p>
+    </div>
+</section>
+
+<section id="wrapper">
+
+    <section class="wrapper style2">
+        <div class="inner">
+            <h2 class="major">Server Updates</h2>
+            <section class="features">
+            {% for post in collections.serverUpdates | limit(4) %}
+                <article>
+                    <h3 class="major">{{ post.data.title }}</h3>
+                    <p>{{ post.data.description }}</p>
+                    <a href="{{ post.url }}" class="special">Read more</a>
+                </article>
+            {% endfor %}
+            </section>
+            <a href="/blog/server-updates/" class="button">All Server Updates</a>
+        </div>
+    </section>
+
+    <section class="wrapper alt style3">
+        <div class="inner">
+            <h2 class="major">Articles</h2>
+            <section class="features">
+            {% for post in collections.articles | limit(4) %}
+                <article>
+                    <h3 class="major">{{ post.data.title }}</h3>
+                    <p>{{ post.data.description }}</p>
+                    <a href="{{ post.url }}" class="special">Read more</a>
+                </article>
+            {% endfor %}
+            </section>
+            <a href="/blog/articles/" class="button">All Articles</a>
+        </div>
+    </section>
+
+    <section class="wrapper style1">
+        <div class="inner">
+            <h2 class="major">Notes</h2>
+            <section class="features">
+            {% for post in collections.notes | limit(4) %}
+                <article>
+                    <h3 class="major">{{ post.data.title }}</h3>
+                    <p>{{ post.data.description }}</p>
+                    <a href="{{ post.url }}" class="special">Read more</a>
+                </article>
+            {% endfor %}
+            </section>
+            <a href="/blog/notes/" class="button">All Notes</a>
+        </div>
+    </section>
+
+</section>

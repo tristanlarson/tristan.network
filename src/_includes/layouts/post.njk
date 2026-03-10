@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+---
+
+<section id="banner">
+    <div class="inner">
+        <h2>{{ title }}</h2>
+        <p>{{ date }}</p>
+    </div>
+</section>
+
+<section id="wrapper">
+    <section class="wrapper style1">
+        <div class="inner">
+            <div class="category">
+                <a href="/blog/{{ category }}/">{{ category }}</a>
+            </div>
+            {{ content | safe }}
+        </div>
+    </section>
+</section>
