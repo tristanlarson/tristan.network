@@ -10,6 +10,7 @@
     { "text": "About", "url": "/about/" }
   ],
   "social": {
-    "mastodon": "https://hachyderm.io/@tryst1129"
+    "mastodon": "https://hachyderm.io/@tryst1129",
+    "mastodonHandle": "@tryst1129"
   }
 }

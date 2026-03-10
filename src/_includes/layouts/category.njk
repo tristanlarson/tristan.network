@@ -10,7 +10,7 @@ layout: layouts/base.njk
 </section>
 
 <section id="wrapper">
-    <section class="wrapper style1">
+    <section class="wrapper {{ wrapperStyle or 'style1' }}">
         <div class="inner">
             <section class="features">
             {% for post in collections[collection] %}
