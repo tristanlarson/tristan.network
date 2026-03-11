@@ -51,8 +51,8 @@ module.exports = function(eleventyConfig) {
 			.sort((a, b) => b.date - a.date);
 	});
 
-	eleventyConfig.addCollection("notes", function(collectionApi) {
-		return collectionApi.getFilteredByGlob("src/blog/notes/*.md")
+	eleventyConfig.addCollection("bookmarks", function(collectionApi) {
+		return collectionApi.getFilteredByGlob("src/blog/bookmarks/*.md")
 			.sort((a, b) => b.date - a.date);
 	});
 

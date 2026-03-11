@@ -8,7 +8,8 @@
     { "text": "Home", "url": "/" },
     { "text": "Login", "url": "https://login.tristan.network/settings/apps" },
     { "text": "Services", "url": "/services/" },
-    { "text": "Blog", "url": "/blog/" }
+    { "text": "Blog", "url": "/blog/" },
+    { "text": "RSS", "url": "/blog/rss" }
   ],
   "social": {
     "mastodon": "https://hachyderm.io/@tryst1129",
