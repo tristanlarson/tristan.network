@@ -17,6 +17,9 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
+	// CSS Passthrough
+	eleventyConfig.addPassthroughCopy("src/assets/css");
+
 	// Pass static assets straight through to output
 	eleventyConfig.addPassthroughCopy("src/assets");
 	eleventyConfig.addPassthroughCopy("src/images");
