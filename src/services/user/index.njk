@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+title: User Services
+description: Services available to friends and family.
+---
+
+<section id="banner">
+    <div class="inner">
+        <h2>User Services</h2>
+        <p>Services available to friends and family.</p>
+    </div>
+</section>
+
+<section id="wrapper">
+    <section class="wrapper style1">
+        <div class="inner">
+            <section class="features">
+            {% for service in collections.userServices %}
+                <article>
+                    {% if service.data.logo %}
+                    <img src="{{ service.data.logo }}" style="width:50px;height:50px;" />
+                    {% endif %}
+                    <h3 class="major">{{ service.data.title }}</h3>
+                    <p>{{ service.data.description }}</p>
+                    <a href="{{ service.url }}" class="special">Learn more</a>
+                </article>
+            {% endfor %}
+            </section>
+        </div>
+    </section>
+</section>

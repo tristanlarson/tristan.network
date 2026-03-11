@@ -1,0 +1,12 @@
+---
+layout: layouts/service.njk
+title: X
+logo: /images/services/X.svg
+image: /images/services/X.jpg
+image_alt: X
+link_tristan: X
+link_official: X
+order: X
+---
+
+XXX

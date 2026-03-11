@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+---
+
+<section id="banner">
+    <div class="inner">
+        <h2>
+            {% if logo %}
+                <img src="{{ logo }}" style="width:60px;height:60px;vertical-align:middle;margin-right:10px;" />
+            {% endif %}
+            {{ title }}
+        </h2>
+        {% if link_tristan %}
+            <a href="{{ link_tristan }}" class="button primary">Open {{ title }}</a>
+        {% endif %}
+        {% if link_official %}
+            <a href="{{ link_official }}" class="button secondary">Official Page</a>
+        {% endif %}
+    </div>
+</section>
+
+<section id="wrapper">
+    <section class="wrapper style1">
+        <div class="inner">
+            {% if image %}
+            <span class="image main"><img src="{{ image }}" alt="{{ image_alt }}" /></span>
+            {% endif %}
+            {{ content | safe }}
+        </div>
+    </section>
+</section>

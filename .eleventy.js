@@ -21,6 +21,21 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/images");
 
 	// Collections
+	eleventyConfig.addCollection("userServices", function(collectionApi) {
+    		return collectionApi.getFilteredByGlob("src/services/user/*.md")
+       	 		.sort((a, b) => a.data.order - b.data.order);
+	});
+
+	eleventyConfig.addCollection("technicalServices", function(collectionApi) {
+    		return collectionApi.getFilteredByGlob("src/services/technical/*.md")
+       			.sort((a, b) => a.data.order - b.data.order);
+	});
+
+	eleventyConfig.addCollection("gameServers", function(collectionApi) {
+    		return collectionApi.getFilteredByGlob("src/services/game/*.md")
+        		.sort((a, b) => a.data.order - b.data.order);
+	});
+
 	eleventyConfig.addCollection("posts", function(collectionApi) {
 		return collectionApi.getFilteredByGlob("src/blog/**/*.md")
 			.sort((a, b) => b.date - a.date);
