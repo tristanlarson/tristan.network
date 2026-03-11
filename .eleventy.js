@@ -10,11 +10,7 @@ module.exports = function(eleventyConfig) {
 
 	// Date filter
 	eleventyConfig.addFilter("readableDate", (date) => {
-		return new Date(date).toLocaleDateString('en-US', {
-			year: 'numeric',
-			month: 'long',
-			day: 'numeric'
-		});
+		return new Date(date).toISOString().replace('T', ' ').split('.')[0];
 	});
 
 	// CSS Passthrough
