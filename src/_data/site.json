@@ -6,8 +6,9 @@
   "email": "tristan@tristan.network",
   "nav": [
     { "text": "Home", "url": "/" },
-    { "text": "Blog", "url": "/blog/" },
-    { "text": "About", "url": "/about/" }
+    { "text": "Login", "url": "https://login.tristan.network/settings/apps" },
+    { "text": "Services", "url": "/services/" },
+    { "text": "Blog", "url": "/blog/" }
   ],
   "social": {
     "mastodon": "https://hachyderm.io/@tryst1129",
