@@ -19,6 +19,7 @@ module.exports = function(eleventyConfig) {
 	// Pass static assets straight through to output
 	eleventyConfig.addPassthroughCopy("src/assets");
 	eleventyConfig.addPassthroughCopy("src/images");
+	eleventyConfig.addPassthroughCopy("src/_redirects");
 
 	// Collections
 	eleventyConfig.addCollection("userServices", function(collectionApi) {
