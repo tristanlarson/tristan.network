@@ -3,7 +3,7 @@ layout: layouts/service.njk
 title: Mealie
 logo: /images/services/mealie.svg
 image: /images/services/mealie-page.png
-image_alt: X
+image_alt: image depicts the mealie website open on a variety of devices, including a mac display, a macbook, an iPad and an iPhone
 link_tristan: https://food.tristan.network
 link_official: https://mealie.io
 order: 2
