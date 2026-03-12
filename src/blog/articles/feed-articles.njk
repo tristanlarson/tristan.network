@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
     <title>{{ site.title }} — Articles</title>
     <link href="{{ site.url }}/blog/articles/feed.xml" rel="self"/>
     <link href="{{ site.url }}/blog/articles/"/>
-    <updated>{{ collections.articles | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+    <updated>{% if collections.articles and collections.articles.length %}{{ collections.articles | getNewestCollectionItemDate | dateToRfc3339 }}{% else %}2026-01-01T00:00:00Z{% endif %}</updated>
     <id>{{ site.url }}/blog/articles/</id>
     <author><name>{{ site.author }}</name></author>
     {% for post in collections.articles %}

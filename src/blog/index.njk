@@ -15,17 +15,9 @@ title: Blog
     <section class="wrapper style3">
         <div class="inner">
 	<div class="content">
-            <div style="text-align: right"><h2 class="major">Server News</h2></div>
-            <section class="features">
-            {% for post in collections.serverNews | limit(4) %}
-                <article>
-                    <h3 class="major">{{ post.data.title }}</h3>
-                    <p>{{ post.data.description }}</p>
-                    <a href="{{ post.url }}" class="special">Read more</a>
-                </article>
-            {% endfor %}
-            </section>
-            <div style="text-align: right"><a href="/blog/server-news/" class="button">All Server News</a></div>
+            <div style="text-align: right"><h2 class="major">Server News</h2>
+	    <p>This is where I post things like new features, major service version updates, and planned downtime alerts.</p>
+            <a href="/blog/server-news/" class="special">All Server News</a></div>
 
 	</div>
         </div>
@@ -35,16 +27,8 @@ title: Blog
         <div class="inner">
 	<div class="content">
             <h2 class="major">Bookmarks</h2>
-            <section class="features">
-            {% for post in collections.bookmarks | limit(4) %}
-                <article>
-                    <h3 class="major">{{ post.data.title }}</h3>
-                    <p>{{ post.data.description }}</p>
-                    <a href="{{ post.url }}" class="special">Read more</a>
-                </article>
-            {% endfor %}
-            </section>
-            <a href="/blog/bookmarks/" class="button">All Bookmarks</a>
+		<p>This is where I post useful and or interesting websites I find.</p>
+            <a href="/blog/bookmarks/" class="special">All Bookmarks</a>
 	</div>
         </div>
     </section>
@@ -52,17 +36,9 @@ title: Blog
     <section class="wrapper style1">
         <div class="inner">
 	<div class="content">
-            <div style="text-align: right"><h2 class="major">Articles</h2></div>
-            <section class="features">
-            {% for post in collections.articles | limit(4) %}
-                <article>
-                    <h3 class="major">{{ post.data.title }}</h3>
-                    <p>{{ post.data.description }}</p>
-                    <a href="{{ post.url }}" class="special">Read more</a>
-                </article>
-            {% endfor %}
-            </section>
-            <div style="text-align: right"><a href="/blog/articles/" class="button">All Articles</a></div>
+            <div style="text-align: right"><h2 class="major">Articles</h2>
+		<p>This is where I might eventually post articles. I probably won't, but all the bloggers I admire write articles so maybe one day I will to.</p>
+            <a href="/blog/articles/" class="button">All Articles</a></div>
 	</div>
         </div>
     </section>
