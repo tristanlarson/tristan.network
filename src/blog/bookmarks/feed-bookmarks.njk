@@ -4,11 +4,11 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>{{ site.title }} — Server Updates</title>
-    <link href="{{ site.url }}/blog/server-updates/feed.xml" rel="self"/>
-    <link href="{{ site.url }}/blog/server-updates/"/>
+    <title>{{ site.title }} — Bookmarks</title>
+    <link href="{{ site.url }}/blog/bookmarks/feed.xml" rel="self"/>
+    <link href="{{ site.url }}/blog/bookmarks/"/>
     <updated>{{ collections.bookmarks | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-    <id>{{ site.url }}/blog/server-updates/</id>
+    <id>{{ site.url }}/blog/bookmarks/</id>
     <author><name>{{ site.author }}</name></author>
     {% for post in collections.bookmarks %}
     <entry>

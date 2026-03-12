@@ -1,16 +1,16 @@
 ---
-permalink: /blog/server-updates/feed.xml
+permalink: /blog/server-news/feed.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>{{ site.title }} — Server Updates</title>
-    <link href="{{ site.url }}/blog/server-updates/feed.xml" rel="self"/>
-    <link href="{{ site.url }}/blog/server-updates/"/>
-    <updated>{{ collections.serverUpdates | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-    <id>{{ site.url }}/blog/server-updates/</id>
+    <title>{{ site.title }} — Server News</title>
+    <link href="{{ site.url }}/blog/server-news/feed.xml" rel="self"/>
+    <link href="{{ site.url }}/blog/server-news/"/>
+    <updated>{{ collections.serverNews | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+    <id>{{ site.url }}/blog/server-news/</id>
     <author><name>{{ site.author }}</name></author>
-    {% for post in collections.serverUpdates %}
+    {% for post in collections.serverNews %}
     <entry>
         <title>{{ post.data.title }}</title>
         <link href="{{ site.url }}{{ post.url }}"/>

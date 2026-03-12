@@ -42,8 +42,8 @@ module.exports = function(eleventyConfig) {
 			.sort((a, b) => b.date - a.date);
 	});
 
-	eleventyConfig.addCollection("serverUpdates", function(collectionApi) {
-		return collectionApi.getFilteredByGlob("src/blog/server-updates/*.md")
+	eleventyConfig.addCollection("serverNews", function(collectionApi) {
+		return collectionApi.getFilteredByGlob("src/blog/server-news/*.md")
 			.sort((a, b) => b.date - a.date);
 	});
 
