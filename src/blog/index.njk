@@ -12,10 +12,10 @@ title: Blog
 
 <section id="wrapper">
 
-    <section class="wrapper alt style3">
+    <section class="wrapper style3">
         <div class="inner">
 	<div class="content">
-            <h2 class="major">Server News</h2>
+            <div style="text-align: right"><h2 class="major">Server News</h2></div>
             <section class="features">
             {% for post in collections.serverNews | limit(4) %}
                 <article>
@@ -25,12 +25,13 @@ title: Blog
                 </article>
             {% endfor %}
             </section>
-            <a href="/blog/server-news/" class="button">All Server News</a>
+            <div style="text-align: right"><a href="/blog/server-news/" class="button">All Server News</a></div>
+
 	</div>
         </div>
     </section>
 
-    <section class="wrapper spotlight style3">
+    <section class="wrapper alt style2">
         <div class="inner">
 	<div class="content">
             <h2 class="major">Bookmarks</h2>
@@ -43,15 +44,15 @@ title: Blog
                 </article>
             {% endfor %}
             </section>
-            <a href="/blog/bookmarks/" class="button">All Notes</a>
+            <a href="/blog/bookmarks/" class="button">All Bookmarks</a>
 	</div>
         </div>
     </section>
 
-    <section class="wrapper alt style1">
+    <section class="wrapper style1">
         <div class="inner">
 	<div class="content">
-            <h2 class="major">Articles</h2>
+            <div style="text-align: right"><h2 class="major">Articles</h2></div>
             <section class="features">
             {% for post in collections.articles | limit(4) %}
                 <article>
@@ -61,7 +62,7 @@ title: Blog
                 </article>
             {% endfor %}
             </section>
-            <a href="/blog/articles/" class="button">All Articles</a>
+            <div style="text-align: right"><a href="/blog/articles/" class="button">All Articles</a></div>
 	</div>
         </div>
     </section>
