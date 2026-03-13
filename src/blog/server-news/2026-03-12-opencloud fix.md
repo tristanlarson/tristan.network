@@ -1,4 +1,6 @@
 ---
+layout: layouts/post.njk
+category: server-news
 title: opencloud fix
 date: 2026-03-12T15:20:25-05:00
 description: I fixed a problem with OpenCloud 
