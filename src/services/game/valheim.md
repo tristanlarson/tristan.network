@@ -2,7 +2,7 @@
 layout: layouts/service.njk
 title: Valheim
 logo: /images/services/valheim.png
-image: /images/services/valheim-page.png
+image: /images/services/valheim-page.webp
 image_alt: image depicts the valheim text logo, ie the word valheim in their font and artistry
 link_tristan:
 link_official: https://valheimgame.com
