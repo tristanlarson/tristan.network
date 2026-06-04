@@ -14,3 +14,5 @@ Tailscale, specifically the server portion (which isn't Open Sourced), is used t
 There's a great alternative whose server is fully open sourced, it's called [NetBird](https://netbird.io). There's also an open source server that can be used by the Tailscale clients called [Headscale](https://headscale.net/stable/). 
 
 I've been meaning to migrate from Tailscale to NetBird for a while now, and at some point I had the NetBird clients installed on all my servers, but the NetBird DNS conflicted with Tailscale's, and at the time I couldn't continue so I disabled NetBird.
+
+UPDATE 2026-06-04: I decided to put Immich and Actual Budget behind my Tailscale VPN for security. Relevant server update [here](
